@@ -1,0 +1,28 @@
+
+Prerequisites:
+
+-3 requirements.txt are given 
+    -1 for pip(in folder pip command) other for 
+    -conda(folder conda command)(not all packages where found in conda as some older packages are used for EAST) 
+    -the outdated/orignal(in folder orignal command) one which was cloned from the repo of EAST.
+
+-In OCR.py sys.path.insert is used on line 17 to import some packages for EAST.
+
+-Code was written inside spyder and so is the cell style.
+
+
+To RUN:
+
+-OCR.py is the main file.
+
+-arguments to parse(line 73 in OCR.py):
+    -test_data_path     path to images
+    -gpu_list           {0,1,...}
+    -Checkpoint_path    /githubEAST/checkpoint/east_icdar2015_resnet_v1_50_rbox 
+    -output_dir         path to output directory (image with boxes and text file of location of boxes)
+    -no_write_image     default=False do not write on images 
+
+-current has been marked in the cell name when multiple versions of the method exist.
+
+-Spyder has trouble with running tensorflow flags so terminal is preferred. 
+
